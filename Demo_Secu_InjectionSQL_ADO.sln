@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Secu_InjectionSQL_ADO", "Demo_Secu_InjectionSQL_ADO\Demo_Secu_InjectionSQL_ADO.csproj", "{03CBD5DC-479A-492C-BDB1-7B37448E2943}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Demo_Secu_InjectionSQL_ADO.Database", "Demo_Secu_InjectionSQL_ADO.Database\Demo_Secu_InjectionSQL_ADO.Database.sqlproj", "{7DD223F0-5080-465A-BF54-4D369D175C3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03CBD5DC-479A-492C-BDB1-7B37448E2943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CBD5DC-479A-492C-BDB1-7B37448E2943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CBD5DC-479A-492C-BDB1-7B37448E2943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CBD5DC-479A-492C-BDB1-7B37448E2943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD223F0-5080-465A-BF54-4D369D175C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD223F0-5080-465A-BF54-4D369D175C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD223F0-5080-465A-BF54-4D369D175C3D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7DD223F0-5080-465A-BF54-4D369D175C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD223F0-5080-465A-BF54-4D369D175C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD223F0-5080-465A-BF54-4D369D175C3D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A4E5C2A-ACC8-43FA-9DF1-4279DCBD792C}
+	EndGlobalSection
+EndGlobal
