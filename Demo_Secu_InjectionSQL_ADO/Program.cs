@@ -18,11 +18,30 @@ namespace Demo_Secu_InjectionSQL_ADO
          ViewAllMember();
          ViewCountMember();
          #endregion
+
       }
 
       private static void ViewCountMember()
       {
-         throw new NotImplementedException();
+         // Utilisation du "using" pour libérer les resources de connection
+         // via l'appel de la méthode "dispose" à la fin du bloc.
+         using(SqlConnection connection = new SqlConnection())
+         {
+            connection.ConnectionString = CONNECTION_STRING;
+            
+            using(SqlCommand command = connection.CreateCommand())
+            {
+               // Définition de la commande SQL
+               command.CommandType = CommandType.Text;
+               command.CommandText = "SELECT COUNT(*) FROM Member";
+
+               // Ouverture de la connection
+               connection.Open();
+
+               int count = Convert.ToInt32(command.ExecuteScalar());
+               Console.WriteLine($"Nombre de membre : {count}");
+            }
+         }
       }
 
       private static void ViewAllMember()
